@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp13
 {
-    public class SerchClientsByNameStrategy : IClientSerchStrategy
+    public class SerchClientsByNameStrategy : IClientSearchStrategy
     {
         private readonly string _name;
         public SerchClientsByNameStrategy(string name)

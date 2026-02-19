@@ -38,16 +38,14 @@ namespace ConsoleApp13
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"[Proxy] клиент с Id = {id} не найден в кэше. Запрос к ");
             Console.ResetColor();
-            var client = _realRepository.GetById(id);
+            client = _realRepository.GetById(id);
             if (client != null)
             { 
                _cache[id] = client; 
             }
             return client;
         }
-        public Task SaveAsync()
-        { 
-        
-        }
+        public Task SaveAsync() => _realRepository.SaveAsync();
+
     }
 }

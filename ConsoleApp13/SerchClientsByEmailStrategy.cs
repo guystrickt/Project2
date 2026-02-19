@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace ConsoleApp13
 {
-    public class SerchClientsByEmailStrategy : IClientSerchStrategy
+    public class SerchClientsByEmailStrategy : IClientSearchStrategy
     {
         private readonly string _emailDomain;
         public SerchClientsByEmailStrategy(string email)
